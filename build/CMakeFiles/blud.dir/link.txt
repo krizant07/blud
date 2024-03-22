@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/blud.dir/src/main.cpp.o CMakeFiles/blud.dir/src/tokenizer.cpp.o CMakeFiles/blud.dir/src/toAsm.cpp.o -o blud 

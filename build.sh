@@ -11,6 +11,3 @@ cmake ..
 
 # Build the project
 make
-
-# Run the executable
-./blud

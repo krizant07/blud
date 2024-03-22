@@ -1,0 +1,3 @@
+/home/tristan/dev/blud/build/CMakeFiles/blud.dir
+/home/tristan/dev/blud/build/CMakeFiles/edit_cache.dir
+/home/tristan/dev/blud/build/CMakeFiles/rebuild_cache.dir

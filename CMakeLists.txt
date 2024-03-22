@@ -3,4 +3,4 @@ project(blud)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(blud src/main.cpp src/tokenizer.cpp)
+add_executable(blud src/main.cpp src/tokenizer.cpp src/toAsm.cpp)

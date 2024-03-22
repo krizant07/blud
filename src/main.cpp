@@ -1,5 +1,8 @@
+#include "toAsm.h"
 #include "tokenizer.h"
+#include <cstdlib>
 #include <fstream>
+#include <ios>
 #include <iostream>
 #include <sstream>
 #include <string>
@@ -22,4 +25,11 @@ int main(int argc, char **argv) {
   }
 
   std::vector<Token> tokenVec = tokenize(content);
+
+  std::fstream file("../out.asm", std::ios::out);
+  file << tokensToAsm(tokenVec);
+  file.close();
+
+  system("nasm -felf64 ../out.asm");
+  system("ld -o out ../out.o");
 }
