@@ -1,13 +1,14 @@
 #!/bin/bash
 
-if [ ! -d build ]; then
-	mkdir build
-fi
-
-cd build
-
-# Generate the build files using CMake
+rm -rf out
+mkdir out
+cd out
 cmake ..
-
-# Build the project
 make
+touch test.bld
+echo "exit 9;" >>test.bld
+./blud test.bld
+./out
+echo $?
+cd ..
+./clean.sh

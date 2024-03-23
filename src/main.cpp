@@ -32,4 +32,6 @@ int main(int argc, char **argv) {
 
   system("nasm -felf64 ../out.asm");
   system("ld -o out ../out.o");
+  system("rm ../out.asm");
+  system("rm ../out.o");
 }

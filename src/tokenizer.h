@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-enum class TokenType { _return, int_literal, semicolon };
+enum class TokenType { exit, int_literal, semicolon };
 
 struct Token {
   TokenType type;
